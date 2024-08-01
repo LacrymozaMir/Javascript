@@ -17,18 +17,9 @@ console.log(sum(3)(2));
 
 let arr = [1, 2, 3, 4, 5, 6, 7];
 
-const inBetween = (a, b) => {
-    return function(x) {
-        return x >= a && x <= b;
-    }
-}
+const inBetween = (a, b) => (x) => (x >= a && x <= b);
 
-const inArray = (arr) => {
-    return function(x) {
-        return arr.includes(x);
-    }
-
-}
+const inArray = (arr) => (x) => (arr.includes(x));
 
 
 console.log( arr.filter(inBetween(3, 6)) ); // 3,4,5,6
