@@ -9,6 +9,7 @@ const showNotification = ({top = 0, right = 0, text}) => {
     let notification = document.createElement('div');
     notification.style.top = top + 'px';
     notification.style.right = right + 'px';
+    notification.style.position = 'absolute';
 
     notification.innerHTML = text;
 
