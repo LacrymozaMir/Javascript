@@ -6,15 +6,15 @@
 
 const showNotification = ({top = 0, right = 0, text}) => {
     
-    let notific = document.createElement('div');
-    notific.style.top = top + 'px';
-    notific.style.right = right + 'px';
+    let notification = document.createElement('div');
+    notification.style.top = top + 'px';
+    notification.style.right = right + 'px';
 
-    notific.innerHTML = text;
+    notification.innerHTML = text;
 
-    document.body.append(notific);
+    document.body.append(notification);
 
-    setTimeout(() => notific.remove(), 1500);
+    setTimeout(() => notification.remove(), 1500);
 
 }
 
